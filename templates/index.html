@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class='container'>
+			<div class='row'>
+				<h1>Employee Attrition Prediction using Machine Learning</h1>
+				<form action='.' method='post'>
+					<div class="form-group">
+						<label>Age</label>
+							<input type="number" class="form-control" name="age" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+						Input Age of the employee.
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Job Satisfaction</label>
+							<input type="number" class="form-control" name="jobSatisfaction" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+						Input Job Satisfaction index of employee.
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Monthly Income</label>
+							<input type="number" class="form-control" name="monthlyIncome" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+							Input Monthly Income of employee.
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Total Working Years</label>
+							<input type="number" class="form-control" name="totalWorkingYears" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+							Input total no. of working years of employee.
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Years since last promotion of Employee</label>
+						<input type="number" class="form-control" name="yearsSinceLastPromotion" aria-describedby="inputGroupPrepend" required>
+						<div class="invalid-feedback">
+							Input years since last promotion of employee in same company.
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Business Travel of Employee</label>
+							<select class="form-control" name="businessTravel">
+								<option value='Non-Travel'>Not much travel</option>
+								<option value='Travel_Frequently'>Travels frequently</option>
+								<option value='Travel_Rarely'>Travels rarely</option>
+							</select>
+					</div>
+					<div class="form-group">
+						<label>Department of Employee</label>
+							<select class="form-control" name="department">
+								<option value='Human Resources'>Human Resources</option>
+								<option value='Research & Development'>Research & Development</option>
+								<option value='Sales'>Sales</option>
+							</select>
+							<div class="invalid-feedback">
+								Input department of employee.
+							</div>
+					</div>
+					<div class="form-group">
+						<label>Gender</label>
+							<select class="form-control" name="gender">
+								<option value='Male'>Male</option>
+								<option value='Female'>Female</option>
+							</select>
+							<div class="invalid-feedback">
+								Input Gender of employee.
+							</div>
+					</div>
+					<div class="form-group">
+						<label>Job Role</label>
+							<select class="form-control" name="jobRole">
+								<option value='Sales Executive'>Sales Executive</option>
+								<option value='Research Scientist'>Research Scientist</option>
+								<option value='Laboratory Technician'>Laboratory Technician</option>
+								<option value='Manufacturing Director'>Manufacturing Director</option>
+								<option value='Healthcare Representative'>Healthcare Representative</option>
+								<option value='Manager'>Manager</option>
+								<option value='Sales Representative'>Sales Representative</option>
+								<option value='Research Director'>Research Director</option>
+								<option value='Human Resources'>Human Resources</option>
+							</select>
+							<div class="invalid-feedback">
+								Input role of employee in the company.
+							</div>
+					</div>
+					<div class="form-group">
+						<label>Marital Status</label>
+							<select class="form-control" name="maritalStatus">
+								<option value='Single'>Single</option>
+								<option value='Married'>Married</option>
+								<option value='Divorced'>Divorced</option>
+							</select>
+							<div class="invalid-feedback">
+								Input the marital status of employee.
+							</div>
+					</div>
+					<button type="submit" class="btn btn-default" name='submit'>Submit</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
